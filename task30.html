@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+        <title>Javascript</title>
+    </head>
+<body>
+<script>
+var buah = [];
+var i = 0;
+
+while(true){
+    var masukan = prompt('masukkan nama buah (ketik stop untuk berhenti)');
+
+    if(masukan === 'stop'){
+        break;
+    } else {
+        buah[i] = masukan;
+        i++;
+    }
+}
+
+console.log("Daftar buah:");
+console.log(buah);
+
+</script>
+</body>
+</html>

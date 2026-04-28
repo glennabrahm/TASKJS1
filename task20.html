@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+        <title>Javascript</title>
+    </head>
+    <body>
+<script>
+
+var pokemonList = ["pikachu", "squirtle", "raichu","lapras","elekid","greninja"];
+
+for (var i = 0; i < pokemonList.length; i++) {
+    var nama = pokemonList[i];
+
+    if (nama === "pikachu" || nama === "raichu" || nama === "elekid") {
+        console.log(nama + " adalah Electric type pokemon");
+    } 
+    else if (nama === "squirtle" || nama === "lapras" || nama === "greninja") {
+        console.log(nama + " adalah Water type pokemon");
+    } 
+    else {
+        console.log(nama + " tidak diketahui tipenya");
+    }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1">
+        <title>Javascript</title>
+    </head>
+    <body>
+<script>
+
+var pokemonList = ["pikachu", "squirtle", "raichu"];
+
+var electricList = "Electric type pokemon: ";
+var waterList = "Water type pokemon: ";
+
+for (var i = 0; i < pokemonList.length; i++) {
+    var nama = pokemonList[i];
+
+    if (nama === "pikachu" || nama === "raichu" || nama === "elekid") {
+        electricList = electricList + nama +" ";
+    } 
+    else if (nama === "squirtle" || nama === "lapras" || nama === "greninja") {
+        waterList = waterList + nama ;
+    }
+}
+
+console.log(electricList);
+console.log(waterList);
+
+</script>
+</body>
+</html>
