@@ -1,29 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name ="viewport" content="width=device-width, initial-scale=1">
-        <title>Javascript</title>
-    </head>
-    <body>
-        <script type="text/javascript">
-            
-         
-        var hasil = 0;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>While Case Study 2</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var counter;
+      counter = 0;
+      total = 0;
+      while (true) {
+        number = prompt("Input your number!");
+        console.log("you entered: " + number);
+        total += Number(number);
+        counter += 1;
 
-        while(true){
-            var masukan = Number(prompt('masukkan angka '));
-
-            if(masukan===-1){
-                break;
-            }
-
-            hasil+=masukan;
+        if (number == -1) {
+          break;
         }
-
-        console.log(hasil)
-
-
-        </script>
-    </body>
+      }
+      console.log("Program stop");
+      console.log("Total Number : " + total);
+    </script>
+  </body>
 </html>
